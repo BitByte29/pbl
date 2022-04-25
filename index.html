@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            transition: all .4s ease;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background: url(./games/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .games{
+            height: 80%;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .gamebox{
+            height: 30vh;
+            width: 32vh;
+            background-color: red;
+            border-radius: 20px;
+            box-shadow: 10px 10px black;
+        }
+        .gamebox:hover{
+            cursor: pointer;
+            box-shadow: -10px -10px black;
+            
+        }
+        .gamebox a{
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid cyan;
+            width: 100%;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            position: relative;
+            top: 80%;
+            left:31%;
+            border-radius: 10px;
+            color: black;
+            font-weight: 600;
+            background-color: rgb(16, 130, 211);
+        }
+        .gamebox a:hover{
+            background-color: green;
+            letter-spacing: 2px;
+            color: yellow;
+        }
+        .one{
+            background:url(./games/game1.jpg);
+            background-repeat: no-repeat;
+            /* background: fixed; */
+            background-size: cover;
+        }
+        .two{
+            background: url(./games/game2.jpg);
+            /* background-size: cover; */
+            
+        }
+        .three{
+            background: url(./games//game3.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="games">
+        <div class="gamebox one"><a href="./games/game1.html">Play</a></div>
+        <div class="gamebox two"><a href="./games/game2.html">Play</a></div>
+        <div class="gamebox three"><a href="./games/game3.html">Play</a></div>
+    </div>
+    
+</body>
+</html>
